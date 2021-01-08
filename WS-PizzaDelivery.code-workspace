@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "backend"
+		},
+		{
+			"path": "front-web"
 		}
 	],
 	"settings": {
