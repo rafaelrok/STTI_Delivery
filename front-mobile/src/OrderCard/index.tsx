@@ -4,6 +4,8 @@ import { Order } from '../types';
 import dayjs from 'dayjs';
 import 'dayjs/locale/pt-br';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
 
 dayjs.locale('pt-br');
 dayjs.extend(relativeTime);
@@ -31,16 +33,19 @@ function OrderCard({ order }: Props) {
             <View style={styles.container} >
                 <View style={styles.header}>
                     <Text style={styles.orderName}>Pedido {order.id}</Text>
-                    <Text style={styles.orderPrice}>{ order.total }</Text>
+                    <Text style={styles.orderPrice}>{ formatPrice(order.total) }</Text>
                 </View>
-            <Text style={styles.text}>{dateFromNow(order.moment)}</Text>
-            <View style={styles.productsList}>
-                <Text style={styles.text}>{ order.address }</Text>
-            </View>
-                <View style={styles.productsList}>
-                    {order.products.map(product => (
-                        <Text key={product.id} style={styles.text}>{product.name}</Text>
-                   ))}
+                <View style={styles.header}>
+                    <Text style={styles.text}>{dateFromNow(order.moment)}</Text>
+                    <Text style={styles.orderStatus}>{order.status}</Text>
+                </View>  
+                    <View style={styles.productsList}>
+                    <Text style={styles.text}>{ order.address }</Text>
+                </View>
+                    <View style={styles.productsList}>
+                        {order.products.map(product => (
+                            <Text key={product.id} style={styles.text}>{product.name}</Text>
+                    ))}
                 </View>
             </View>
     );
@@ -70,8 +75,18 @@ const styles = StyleSheet.create(
             fontWeight: 'normal',
             fontSize: 14,
             lineHeight: 19,
+            textAlign: 'left',
             letterSpacing: -0.24,
             color: '#9E9E9E',
+            fontFamily: 'OpenSans_400Regular'
+        },
+        orderStatus: {
+            fontWeight: 'bold',
+            fontSize: 14,
+            lineHeight: 19,
+            textAlign: 'right',
+            letterSpacing: -0.24,
+            color: '#007ACC',
             fontFamily: 'OpenSans_400Regular'
         },
         orderName: {
