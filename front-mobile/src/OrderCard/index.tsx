@@ -32,7 +32,7 @@ function OrderCard({ order }: Props) {
     return (
             <View style={styles.container} >
                 <View style={styles.header}>
-                    <Text style={styles.orderName}>Pedido {order.id}</Text>
+                    <Text style={styles.orderName}>Pedido Nº {order.id}</Text>
                     <Text style={styles.orderPrice}>{ formatPrice(order.total) }</Text>
                 </View>
                 <View style={styles.header}>

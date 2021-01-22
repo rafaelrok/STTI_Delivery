@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { fetchProducts, saveOrder } from '../api';
+import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
 import OrderLocation from './OrderLocation';
@@ -55,6 +56,7 @@ function Orders() {
 
     return (
         <>
+            <Navbar />
             <div className="orders-container">
                 <StepsHeader />
                 <ProductsList

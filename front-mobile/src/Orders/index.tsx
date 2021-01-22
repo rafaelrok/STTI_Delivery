@@ -12,29 +12,30 @@ function Orders() {
     const [orders, setOrders] = useState<Order[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const navigation = useNavigation(); 
-    //const isFocused = useIsFocused();
-     
-    /*const fetchData = () => {
+    const isFocused = useIsFocused();
+
+    //Responsavel por verificar a confirmação do pedido e remover da lista de pedidos em aberto 
+    const fetchData = () => {
         setIsLoading(true);
         fetchOrders()
             .then(response => setOrders(response.data))
             .catch(() => Alert.alert('Houve um erro ao localizar pedidos'))
             .finally(() => setIsLoading(false));
-    }*/
+    }
 
-    /*useEffect(() => {
+    useEffect(() => {
         if (isFocused) {
             fetchData
         }
-    }, [isFocused]);*/
+    }, [isFocused]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         setIsLoading(true);
         fetchOrders()
             .then(response => setOrders(response.data))
             .catch(() => Alert.alert('Houve um erro ao localizar pedidos'))
             .finally(() => setIsLoading(false));
-    }, []);
+    }, []);*/
 
     const handleOnPress = (order: Order) => {
         navigation.navigate('OrderDetails', {

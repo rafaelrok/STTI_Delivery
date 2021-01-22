@@ -18,7 +18,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*Responsavel por remver de toda ta <a href=''> o sublinhado de link*/
+/*Responsavel por remover de toda <a href=''> o sublinhado de link*/
 a {
   text-decoration: none;
 }
