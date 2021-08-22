@@ -12,20 +12,20 @@ function OrderSummary({ amount, totalPrice, onSubmit }: Prods) {
             <div className="order-summary-content">
                 <div>
                     <span className="amount-selected-container">
-                        <strong className="amount-selected">{ amount }</strong>
-                    PEDIDOS SELECIONADOS
-                </span>
+                    <strong className="amount-selected">{ amount }</strong>
+                            PEDIDOS SELECIONADOS
+                    </span>
                     <span className="order-summary-total">
-                        <strong className="amount-selected">{ formatPrice(totalPrice) }</strong>
-                    VALOR TOTAL
-                </span>
+                    <strong className="amount-selected">{ formatPrice(totalPrice) }</strong>
+                            VALOR TOTAL
+                    </span>
                 </div>
-                <button
+                    <button
                     className="order-summary-make-order"
                     onClick={onSubmit}
-                >
-                    ENVIAR PEDIDO
-                </button>
+                    >
+                    CARRINHO
+                    </button>
             </div>
         </div>
     )

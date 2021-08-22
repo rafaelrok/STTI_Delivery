@@ -86,6 +86,18 @@ function SignUp() {
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
+                                autoComplete="fname"
+                                name="userName"
+                                variant="outlined"
+                                required
+                                fullWidth
+                                id="userName"
+                                label="Usuário"
+                                autoFocus
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
                                 variant="outlined"
                                 required
                                 fullWidth
@@ -102,6 +114,18 @@ function SignUp() {
                                 fullWidth
                                 name="password"
                                 label="Senha"
+                                type="password"
+                                id="password"
+                                autoComplete="current-password"
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                                variant="outlined"
+                                required
+                                fullWidth
+                                name="password"
+                                label="Confirmar Senha"
                                 type="password"
                                 id="password"
                                 autoComplete="current-password"

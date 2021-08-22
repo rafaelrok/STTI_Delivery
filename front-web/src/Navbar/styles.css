@@ -1,7 +1,7 @@
 .main-navbar{
     background-color: #DA5C5C;
     height: 70px;
-    padding-left: 45px;
+    padding-left: 55px;
     display: flex;
     align-items: center;
 }
@@ -12,12 +12,21 @@
     letter-spacing: -0.015em;
     color: #FFFFFF;
     margin-left: 15px;
+    display: flex;
 }
-.login-text {
+.login-text{
     font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: -0.015em;
+    font-size: 18px;
     color: #FFFFFF;
-    margin-left: 15px;
+    letter-spacing: -0.015em;
+    margin-left: 77%;
+    display: flex;
+}
+.logout-text{
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: -0.015em;
+    margin-left: 1%;
+    display: flex;
 }

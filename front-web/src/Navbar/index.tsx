@@ -7,8 +7,9 @@ function Navbar() {
     return (
         <nav className="main-navbar">
             <Logo />
-            <Link to="/" className="logo-text">STTI Delivery</Link>
+            <Link to="/" className="logo-text">Lina Laços</Link>
             <Link to="/signin" className="login-text">Entrar</Link>
+            <Link to="/" className="logout-text">Sair</Link>
         </nav>
     )
 }
