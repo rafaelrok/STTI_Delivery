@@ -11,9 +11,6 @@ https://stti-delivery.netlify.app/
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rafaelrok/letmeask?color=%2304D361">
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
-  </a>
 
   <a href="https://www.linkedin.com/in/rafael-vieira-dos-santos-7a1842201/">
     <img alt="Changed by Rafael Vieira" src="https://img.shields.io/badge/changed%20by-Rafael_Vieira-%2304D361">
